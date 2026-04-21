@@ -1,63 +1,64 @@
-# Autonomous work plan — 2026-04-21
+# Autonomous work plan — round 2 — 2026-04-21
 
-**Goal:** during a 5+ hour autonomous run, advance the Eneve proposal package from "readiness artifacts drafted" to "sendable package with real data, tested, peer-reviewed." Include Vortex-focused materials discovered during the research phase.
+Continuation of the first 5-hour autonomous run. Same ground rules:
+no external messaging, no destructive ops, commit every ~30 min of progress, no fake data, honest about gaps.
 
-**Ground rules**
-- No external messaging (user has been explicit)
-- No destructive operations
-- Commit every ~30 min of progress
-- No fake data — if an enrichment can't be verified, flag `None` with reason
-- Honest about gaps — don't paper over
+## Round 1 recap (archived)
 
-## Work items
+19 tasks complete across 7 workstreams. Full log: git log + `docs/critique/2026-04-21-hostile-review.md`. 51 tests passing, mypy strict clean, ruff clean.
 
-### Block A — Real data for the universe
-- [ ] A1: Outside-in research on 12-15 highest-signal universe companies; produce structured fixture data for each (revenue, employees, founded_year, country, ticker if public, github_org if public)
-- [ ] A2: Promote researched fixtures into a new enriched universe JSON
-- [ ] A3: Run Solstein pipeline on the enriched universe; capture output
+## Round 2 goal
 
-### Block B — Engineering: narrative generator
-- [ ] B1: Add a `solstein narrate` CLI that takes a pipeline output universe JSON and produces an analytical deal-team brief with qualitative observations (not just tables)
-- [ ] B2: Tests for the narrative generator
-- [ ] B3: Rerun the pipeline + narrate on the enriched universe → sample brief
+Close the genuine engineering and commercial gaps that round 1 identified but didn't resolve. Nothing new that requires human decisions — only work that adds substance without creating new unaddressed promises.
 
-### Block C — Vortex-angle reframe
-- [ ] C1: Outside-in research on Vortex Capital Partners' known portfolio
-- [ ] C2: Portfolio-level transformation-readiness brief — a Solstein-ish assessment of Vortex's portcos, not just Eneve
-- [ ] C3: Variant SOW for a PE-portfolio engagement (vs. single-company engagement)
+## Work blocks
 
-### Block D — Commercial kit expansion
-- [ ] D1: Equity term sheet template (flagged "legal review required")
-- [ ] D2: Pitch deck outline (markdown; slide-by-slide structure)
-- [ ] D3: Engagement onboarding checklist — what we need from day 1
+### Block H — Engineering depth (highest leverage)
+- [ ] H1: Website-scraping adapter — enrich private companies from public site + careers/blog. Respects robots.txt, non-aggressive.
+- [ ] H2: AI-maturity extractor — derive a signal from website content + job postings (ML role keywords, AI product language, OSS org activity).
+- [ ] H3: HTTP cache — re-runs shouldn't hammer external APIs.
+- [ ] H4: Excel improvements — conditional formatting, per-tier sheets.
+- [ ] H5: Integration test suite for the full pipeline.
 
-### Block E — Methodology
-- [ ] E1: Chapter 8 (ticket lifecycle automation) — written as a design doc, clearly labeled "not yet executed in a real engagement"
-- [ ] E2: Sample prompt library for AI-augmented refactoring (one file per pattern)
+### Block I — Commercial completeness
+- [ ] I1: RFP response template
+- [ ] I2: Objection-handling cheatsheet (internal)
+- [ ] I3: Mutual NDA template (draft, flagged for legal review)
+- [ ] I4: Partner-meeting prep checklist
+- [ ] I5: Change order template (for SOW modifications during engagement)
 
-### Block F — Self-critique pass
-- [ ] F1: Critic-agent review of the full package; produce a findings doc
-- [ ] F2: Address top critiques; strengthen weakest sections
+### Block J — Second universe (prove Solstein isn't energy-specific)
+- [ ] J1: Research 10-15 Dutch/Benelux PE-backed B2B SaaS companies (not energy)
+- [ ] J2: Populate universe JSON with verified fields
+- [ ] J3: Run pipeline, produce sample brief
 
-### Block G — Repo hygiene
-- [ ] G1: Top-level README updated to reflect all docs
-- [ ] G2: docs/INDEX.md — single entry point for the proposal package
-- [ ] G3: Ensure all cross-links work
+### Block K — Methodology prompts (deepen the library)
+- [ ] K1: Dependency upgrade prompt (safe modernization)
+- [ ] K2: Migration-planning prompt (one system → another)
+- [ ] K3: Incident postmortem prompt
+- [ ] K4: Sponsor communication prompt (weekly brief template)
+- [ ] K5: First-week diagnostic kickoff prompt
+
+### Block L — Critic round 2
+- [ ] L1: Re-run hostile critic against updated package
+- [ ] L2: Address second-round findings
+
+### Block M — Engineer onboarding + governance
+- [ ] M1: "First 90 days" runbook for a new AI-Whisperers engineer
+- [ ] M2: CONTRIBUTING.md for the repo
+- [ ] M3: Architecture decision record (ADR) template + 3 backfill ADRs for v2's core decisions
 
 ## Acceptance criteria
 
-Each block produces committed artifacts on `main`. All engineering changes keep `pytest`, `ruff`, and `mypy` clean. The final state of the repo is browseable end-to-end — a hostile reader could navigate from `README.md` to every other document without dead links.
+Same as round 1: all engineering keeps gates green (pytest / ruff / mypy). All docs honest. Every commit pushes. Final state has cross-links working.
 
 ## Stop conditions
 
-- User interrupts
-- Same error repeated 3× across fix attempts
-- Blast-radius actions needed (credential rotation, deletion of shared infra)
-- All blocks complete
+Same. Stop on completion, destructive need, repeated error, or resource exhaustion.
 
 ## What is explicitly NOT in scope
 
 - Sending anything externally
-- Creating fake data to look impressive
-- Recommending destructive architectural changes to v1 (v1 is archived)
-- Engineering changes that would require paid API keys (Crunchbase, LinkedIn Talent Insights)
+- Paid API keys (Crunchbase, LinkedIn, etc.) — still out of scope
+- New corporate/legal decisions — still out of scope
+- Fabricating case studies, clients, or references
