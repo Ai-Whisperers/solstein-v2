@@ -6,6 +6,7 @@ Contract for any adapter:
 3. Never silently fails. Never returns fake data.
 """
 
+from solstein.adapters.companies_house import CompaniesHouseAdapter
 from solstein.adapters.github import GitHubAdapter
 
-__all__ = ["GitHubAdapter"]
+__all__ = ["CompaniesHouseAdapter", "GitHubAdapter"]

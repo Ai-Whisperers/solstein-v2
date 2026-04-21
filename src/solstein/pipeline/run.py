@@ -11,8 +11,8 @@ from pathlib import Path
 import httpx
 from loguru import logger
 
-from solstein.adapters import GitHubAdapter
-from solstein.domain import Universe
+from solstein.adapters import CompaniesHouseAdapter, GitHubAdapter
+from solstein.domain import Company, Universe
 from solstein.export.writers import write_excel, write_markdown_brief
 from solstein.scoring import score_company
 
@@ -28,7 +28,14 @@ async def run_pipeline(universe: Universe, output_dir: Path) -> Universe:
 
     async with httpx.AsyncClient() as client:
         github = GitHubAdapter(client)
-        universe.companies = await asyncio.gather(*(github.enrich(c) for c in universe.companies))
+        companies_house = CompaniesHouseAdapter(client)
+
+        async def enrich_one(c: Company) -> Company:
+            c = await github.enrich(c)
+            c = await companies_house.enrich(c)
+            return c
+
+        universe.companies = await asyncio.gather(*(enrich_one(c) for c in universe.companies))
 
     for company in universe.companies:
         score_company(company)
