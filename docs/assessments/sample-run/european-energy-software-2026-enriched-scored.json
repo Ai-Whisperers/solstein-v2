@@ -1,27 +1,7 @@
 {
   "name": "european-energy-software-2026-enriched",
-  "description": "Enriched European energy software universe. 12 companies with fields populated from verified public sources (PitchBook, Crunchbase, Owler, company press releases, GitHub). Every field was individually verified 2026-04-21. Use this universe for sample Solstein runs and the deal-team brief example.",
+  "description": "Enriched European energy software universe. 20 companies with fields populated from verified public sources (PitchBook, Crunchbase, Owler, Tracxn, GitHub, company press releases). Every field individually verified 2026-04-21. Use this universe for sample Solstein runs and the deal-team brief example.",
   "companies": [
-    {
-      "name": "1KOMMA5",
-      "country": "DE",
-      "website": "https://1komma5.com/",
-      "revenue_eur": 520000000.0,
-      "employees": 3000,
-      "growth_yoy": 0.36,
-      "founded_year": 2021,
-      "ticker": null,
-      "sec_cik": null,
-      "github_org": "1K5-TECH",
-      "github_stars_total": null,
-      "github_commits_last_90d": null,
-      "ai_maturity_score": null,
-      "financial_health_score": 3.466666666666667,
-      "growth_score": 10.0,
-      "composite_score": 6.733333333333333,
-      "tier": "diamond",
-      "citations": {}
-    },
     {
       "name": "Eneve",
       "country": "NL",
@@ -43,6 +23,39 @@
       "citations": {}
     },
     {
+      "name": "1KOMMA5",
+      "country": "DE",
+      "website": "https://1komma5.com/",
+      "revenue_eur": 520000000.0,
+      "employees": 3000,
+      "growth_yoy": 0.36,
+      "founded_year": 2021,
+      "ticker": null,
+      "sec_cik": null,
+      "github_org": "1K5-TECH",
+      "github_stars_total": 0,
+      "github_commits_last_90d": 0,
+      "ai_maturity_score": 0.0,
+      "financial_health_score": 3.466666666666667,
+      "growth_score": 10.0,
+      "composite_score": 5.386666666666667,
+      "tier": "lead",
+      "citations": {
+        "github_stars_total": {
+          "source": "github",
+          "url": "https://github.com/1K5-TECH",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        },
+        "github_commits_last_90d": {
+          "source": "github",
+          "url": "https://github.com/1K5-TECH",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        }
+      }
+    },
+    {
       "name": "Kraken Technologies",
       "country": "GB",
       "website": "https://kraken.tech/",
@@ -53,14 +66,27 @@
       "ticker": null,
       "sec_cik": null,
       "github_org": "octoenergy",
-      "github_stars_total": null,
-      "github_commits_last_90d": null,
-      "ai_maturity_score": null,
+      "github_stars_total": 971,
+      "github_commits_last_90d": 12,
+      "ai_maturity_score": 3.3532501840584517,
       "financial_health_score": 0.8640000000000001,
       "growth_score": 10.0,
-      "composite_score": 5.4319999999999995,
+      "composite_score": 5.016250036811691,
       "tier": "lead",
-      "citations": {}
+      "citations": {
+        "github_stars_total": {
+          "source": "github",
+          "url": "https://github.com/octoenergy",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        },
+        "github_commits_last_90d": {
+          "source": "github",
+          "url": "https://github.com/octoenergy",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        }
+      }
     },
     {
       "name": "Otovo",
@@ -73,14 +99,60 @@
       "ticker": "OTOVO.OL",
       "sec_cik": null,
       "github_org": "otovo",
-      "github_stars_total": null,
-      "github_commits_last_90d": null,
-      "ai_maturity_score": null,
+      "github_stars_total": 159,
+      "github_commits_last_90d": 0,
+      "ai_maturity_score": 0.8805588497281805,
       "financial_health_score": 10.0,
       "growth_score": 0.0,
-      "composite_score": 5.0,
+      "composite_score": 4.176111769945636,
       "tier": "lead",
-      "citations": {}
+      "citations": {
+        "github_stars_total": {
+          "source": "github",
+          "url": "https://github.com/otovo",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        },
+        "github_commits_last_90d": {
+          "source": "github",
+          "url": "https://github.com/otovo",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        }
+      }
+    },
+    {
+      "name": "Tibber",
+      "country": "NO",
+      "website": "https://tibber.com/",
+      "revenue_eur": 32000000.0,
+      "employees": 353,
+      "growth_yoy": null,
+      "founded_year": 2016,
+      "ticker": null,
+      "sec_cik": null,
+      "github_org": "tibber",
+      "github_stars_total": 91,
+      "github_commits_last_90d": 144,
+      "ai_maturity_score": 5.100341541118937,
+      "financial_health_score": 1.813031161473088,
+      "growth_score": null,
+      "composite_score": 2.908801288021704,
+      "tier": "salt",
+      "citations": {
+        "github_stars_total": {
+          "source": "github",
+          "url": "https://github.com/tibber",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        },
+        "github_commits_last_90d": {
+          "source": "github",
+          "url": "https://github.com/tibber",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        }
+      }
     },
     {
       "name": "Enpal",
@@ -103,24 +175,37 @@
       "citations": {}
     },
     {
-      "name": "Tibber",
+      "name": "Volue",
       "country": "NO",
-      "website": "https://tibber.com/",
-      "revenue_eur": 32000000.0,
-      "employees": 353,
-      "growth_yoy": null,
-      "founded_year": 2016,
-      "ticker": null,
+      "website": "https://www.volue.com/",
+      "revenue_eur": 120000000.0,
+      "employees": 825,
+      "growth_yoy": 0.09,
+      "founded_year": 2020,
+      "ticker": "VOLUE.OL",
       "sec_cik": null,
-      "github_org": "tibber",
-      "github_stars_total": null,
-      "github_commits_last_90d": null,
-      "ai_maturity_score": null,
-      "financial_health_score": 1.813031161473088,
-      "growth_score": null,
-      "composite_score": null,
-      "tier": "unknown",
-      "citations": {}
+      "github_org": "Volue",
+      "github_stars_total": 2,
+      "github_commits_last_90d": 0,
+      "ai_maturity_score": 0.12041199826559248,
+      "financial_health_score": 2.9090909090909087,
+      "growth_score": 3.0,
+      "composite_score": 2.3877187632894823,
+      "tier": "salt",
+      "citations": {
+        "github_stars_total": {
+          "source": "github",
+          "url": "https://github.com/Volue",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        },
+        "github_commits_last_90d": {
+          "source": "github",
+          "url": "https://github.com/Volue",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        }
+      }
     },
     {
       "name": "Next Kraftwerke",
@@ -153,14 +238,27 @@
       "ticker": null,
       "sec_cik": null,
       "github_org": "sonnen",
-      "github_stars_total": null,
-      "github_commits_last_90d": null,
-      "ai_maturity_score": null,
+      "github_stars_total": 12,
+      "github_commits_last_90d": 0,
+      "ai_maturity_score": 0.43167249841905,
       "financial_health_score": null,
       "growth_score": null,
       "composite_score": null,
       "tier": "unknown",
-      "citations": {}
+      "citations": {
+        "github_stars_total": {
+          "source": "github",
+          "url": "https://github.com/sonnen",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        },
+        "github_commits_last_90d": {
+          "source": "github",
+          "url": "https://github.com/sonnen",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        }
+      }
     },
     {
       "name": "Lichtblick",
@@ -250,6 +348,139 @@
       "employees": 80,
       "growth_yoy": null,
       "founded_year": 2009,
+      "ticker": null,
+      "sec_cik": null,
+      "github_org": null,
+      "github_stars_total": null,
+      "github_commits_last_90d": null,
+      "ai_maturity_score": null,
+      "financial_health_score": null,
+      "growth_score": null,
+      "composite_score": null,
+      "tier": "unknown",
+      "citations": {}
+    },
+    {
+      "name": "Greenbyte",
+      "country": "SE",
+      "website": "https://www.greenbyte.com/",
+      "revenue_eur": null,
+      "employees": 91,
+      "growth_yoy": null,
+      "founded_year": 2010,
+      "ticker": null,
+      "sec_cik": null,
+      "github_org": null,
+      "github_stars_total": null,
+      "github_commits_last_90d": null,
+      "ai_maturity_score": null,
+      "financial_health_score": null,
+      "growth_score": null,
+      "composite_score": null,
+      "tier": "unknown",
+      "citations": {}
+    },
+    {
+      "name": "Smappee",
+      "country": "BE",
+      "website": "https://www.smappee.com/",
+      "revenue_eur": 13000000.0,
+      "employees": 145,
+      "growth_yoy": null,
+      "founded_year": 2012,
+      "ticker": null,
+      "sec_cik": null,
+      "github_org": null,
+      "github_stars_total": null,
+      "github_commits_last_90d": null,
+      "ai_maturity_score": null,
+      "financial_health_score": 1.7931034482758619,
+      "growth_score": null,
+      "composite_score": null,
+      "tier": "unknown",
+      "citations": {}
+    },
+    {
+      "name": "Voltaware",
+      "country": "GB",
+      "website": "https://voltaware.com/",
+      "revenue_eur": null,
+      "employees": 17,
+      "growth_yoy": null,
+      "founded_year": 2014,
+      "ticker": null,
+      "sec_cik": null,
+      "github_org": null,
+      "github_stars_total": null,
+      "github_commits_last_90d": null,
+      "ai_maturity_score": null,
+      "financial_health_score": null,
+      "growth_score": null,
+      "composite_score": null,
+      "tier": "unknown",
+      "citations": {}
+    },
+    {
+      "name": "Switchee",
+      "country": "GB",
+      "website": "https://switchee.com/",
+      "revenue_eur": null,
+      "employees": 78,
+      "growth_yoy": null,
+      "founded_year": 2015,
+      "ticker": null,
+      "sec_cik": null,
+      "github_org": null,
+      "github_stars_total": null,
+      "github_commits_last_90d": null,
+      "ai_maturity_score": null,
+      "financial_health_score": null,
+      "growth_score": null,
+      "composite_score": null,
+      "tier": "unknown",
+      "citations": {}
+    },
+    {
+      "name": "gridX",
+      "country": "DE",
+      "website": "https://www.gridx.ai/",
+      "revenue_eur": null,
+      "employees": 94,
+      "growth_yoy": null,
+      "founded_year": 2016,
+      "ticker": null,
+      "sec_cik": null,
+      "github_org": "grid-x",
+      "github_stars_total": 170,
+      "github_commits_last_90d": 3,
+      "ai_maturity_score": 1.8464220779906344,
+      "financial_health_score": null,
+      "growth_score": null,
+      "composite_score": null,
+      "tier": "unknown",
+      "citations": {
+        "github_stars_total": {
+          "source": "github",
+          "url": "https://github.com/grid-x",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        },
+        "github_commits_last_90d": {
+          "source": "github",
+          "url": "https://github.com/grid-x",
+          "retrieved_at": "2026-04-21",
+          "confidence": 1.0
+        }
+      }
+    },
+    {
+      "name": "Limejump",
+      "country": "GB",
+      "website": "https://limejump.com/",
+      "revenue_eur": null,
+      "employees": null,
+      "growth_yoy": null,
+      "founded_year": 2014,
       "ticker": null,
       "sec_cik": null,
       "github_org": null,

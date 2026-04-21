@@ -1,6 +1,6 @@
 {
   "name": "european-energy-software-2026-enriched",
-  "description": "Enriched European energy software universe. 12 companies with fields populated from verified public sources (PitchBook, Crunchbase, Owler, company press releases, GitHub). Every field was individually verified 2026-04-21. Use this universe for sample Solstein runs and the deal-team brief example.",
+  "description": "Enriched European energy software universe. 20 companies with fields populated from verified public sources (PitchBook, Crunchbase, Owler, Tracxn, GitHub, company press releases). Every field individually verified 2026-04-21. Use this universe for sample Solstein runs and the deal-team brief example.",
   "companies": [
     {
       "name": "Eneve",
@@ -113,6 +113,60 @@
       "website": "https://www.kiwipowered.com",
       "employees": 80,
       "founded_year": 2009
+    },
+    {
+      "name": "Volue",
+      "country": "NO",
+      "website": "https://www.volue.com",
+      "revenue_eur": 120000000,
+      "employees": 825,
+      "growth_yoy": 0.09,
+      "founded_year": 2020,
+      "github_org": "Volue",
+      "ticker": "VOLUE.OL"
+    },
+    {
+      "name": "Greenbyte",
+      "country": "SE",
+      "website": "https://www.greenbyte.com",
+      "employees": 91,
+      "founded_year": 2010
+    },
+    {
+      "name": "Smappee",
+      "country": "BE",
+      "website": "https://www.smappee.com",
+      "revenue_eur": 13000000,
+      "employees": 145,
+      "founded_year": 2012
+    },
+    {
+      "name": "Voltaware",
+      "country": "GB",
+      "website": "https://voltaware.com",
+      "employees": 17,
+      "founded_year": 2014
+    },
+    {
+      "name": "Switchee",
+      "country": "GB",
+      "website": "https://switchee.com",
+      "employees": 78,
+      "founded_year": 2015
+    },
+    {
+      "name": "gridX",
+      "country": "DE",
+      "website": "https://www.gridx.ai",
+      "employees": 94,
+      "founded_year": 2016,
+      "github_org": "grid-x"
+    },
+    {
+      "name": "Limejump",
+      "country": "GB",
+      "website": "https://limejump.com",
+      "founded_year": 2014
     }
   ]
 }
