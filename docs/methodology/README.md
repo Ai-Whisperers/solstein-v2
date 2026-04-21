@@ -23,9 +23,8 @@ This is an internal document. It is the thing we sell in a Phase 1 diagnostic an
 
 | Chapter | State |
 |---|---|
-| 1, 2, 10 | Draft, ready for review |
-| 3, 4, 5, 6, 7, 9 | Outlined, not written |
-| 8 | Not yet executed — no evidence to write from |
+| 1, 2, 3, 4, 5, 6, 7, 9, 10 | Draft, ready for review |
+| 8 (Ticket lifecycle automation) | Not yet executed in a real engagement — no evidence to write from; will write after first pilot |
 
 ## Ownership
 
