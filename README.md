@@ -1,20 +1,60 @@
 # Solstein v2
 
-Internal prospecting tool for AI-Whisperers' equity-for-transformation business.
+Internal prospecting tool + transformation methodology for AI-Whisperers' equity-for-transformation business.
 
 ## What this is (and isn't)
 
-**Is:** a focused, internal tool for the AI-Whisperers deal team. Given a market universe (e.g., "European energy software"), Solstein produces a ranked shortlist of companies worth approaching for AI-native transformation engagements. Output is a deal-team brief: Excel shortlist + Markdown rationale + citation trail.
+**Is:** a focused internal tool plus a complete documentation package — methodology, case studies, commercial templates, sample assessments — that together support AI-Whisperers' commercial motion to PE firms and their portfolio companies.
 
-**Is not:** a SaaS product sold to PE firms. That was v1. V1 is archived.
+**Is not:** a SaaS product sold to PE firms. That was v1. V1 is archived at [`Ai-Whisperers/solstein-v1-archive`](https://github.com/Ai-Whisperers/solstein-v1-archive).
+
+## Repository structure (what's where)
+
+```
+.
+├── README.md ............................ this file
+├── AUTONOMOUS_PLAN.md ................... last autonomous-run plan
+├── src/solstein/ ........................ the prospecting tool (Python)
+├── tests/ ............................... unit + integration tests + fixtures
+├── docs/
+│   ├── INDEX.md ......................... master navigation
+│   ├── ARCHITECTURE.md .................. engineering rules
+│   ├── BUSINESS.md ...................... what AI-Whisperers actually sells
+│   ├── universe-schema.md ............... pipeline input format
+│   ├── case-studies/ .................... internal v1→v2 rebuild
+│   ├── methodology/ ..................... 10-chapter playbook + prompt library
+│   ├── assessments/ ..................... Eneve + Vortex outside-in research
+│   ├── commercial/ ...................... SOW + PPA + equity + pitch + onboarding + legal/security posture
+│   └── critique/ ........................ hostile review of the package
+└── .github/workflows/ci.yml ............. lint + typecheck + test
+```
+
+**Read [`docs/INDEX.md`](docs/INDEX.md) for audience-keyed navigation paths.**
 
 ## Business context
 
-AI-Whisperers' actual business is **taking equity in PE portfolio companies in exchange for AI-native transformation** (modernized CICD, ticket lifecycle automation, refactoring-with-AI, quality gates). Eneve (€30M revenue Dutch energy software) is the first proof case.
+AI-Whisperers' actual business is **taking equity (or fixed fees) in PE portfolio companies in exchange for AI-native transformation** (modernized CICD, ticket lifecycle automation, refactoring-with-AI, quality gates).
 
-Solstein's job is to find the next Eneves: companies in the right size band, in PE ownership or PE-adjacent, where an AI transformation would deliver measurable velocity/quality lift.
+Solstein-the-tool finds candidate portcos. Solstein-the-package (everything in `docs/`) supports the engagement once a prospect is identified.
+
+Eneve (€30M revenue Dutch energy software, owned by Vortex Capital Partners) is the first **engagement target** — *not yet a delivered engagement*. See `docs/assessments/eneve/README.md`.
 
 This product serves the deal team. It does not serve external customers. It is small, fast, and honest.
+
+## Current readiness state
+
+Per [`docs/commercial/gaps-before-send.md`](docs/commercial/gaps-before-send.md):
+
+| Layer | State |
+|---|---|
+| Engineering tool | ✅ Working — 51 tests passing, mypy strict clean |
+| Methodology playbook | 🟡 9/10 chapters, evidence from internal v1→v2 only (no external engagements yet) |
+| Commercial templates | 🟡 Drafted — pricing not finalized, not legally reviewed |
+| Legal posture | 🔴 Not ready — see `docs/commercial/legal-posture.md` |
+| Security posture | 🔴 Not ready — see `docs/commercial/security-posture.md` |
+| External engagements | 🔴 Zero — Eneve has not been contacted |
+
+**6 P0 pre-send gates open** (see `docs/commercial/gaps-before-send.md`). The package is internal readiness; nothing is ready to send to a counterparty.
 
 ## Scope
 
@@ -65,3 +105,14 @@ uv run mypy src/solstein
 ## CI
 
 GitHub Actions: lint → typecheck → test on every PR. No mystery.
+
+## Honesty about scope
+
+The repository contains substantially more documentation than code. This is intentional — the methodology, case studies, and commercial templates are the primary deliverable for AI-Whisperers' commercial motion. The Solstein code itself is internal tooling that supports them.
+
+The package was reviewed by a hostile critic (see `docs/critique/`) and revised in response. Many gaps remain explicit and tracked — see `docs/commercial/gaps-before-send.md`.
+
+## Related
+
+- [`Ai-Whisperers/solstein-v1-archive`](https://github.com/Ai-Whisperers/solstein-v1-archive) — the v1 codebase, archived read-only
+- [`docs/INDEX.md`](docs/INDEX.md) — navigation for everything in this repo
