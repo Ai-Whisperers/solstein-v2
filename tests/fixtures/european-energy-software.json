@@ -1,88 +1,56 @@
 {
   "name": "european-energy-software-2026",
-  "description": "Starter universe: European software companies serving the energy sector. Seed list for deal-team prospecting. Expand as leads come in from Michiel Kuiper and network.",
+  "description": "Starter universe: 50 European software companies serving the energy sector. Built from public signals (websites, news, VC databases). Seed list for deal-team prospecting — expect 30-40% to be incorrectly categorized or stale on first enrichment run; treat the ranked output as a starting conversation, not a verdict.",
   "companies": [
-    {
-      "name": "Eneve",
-      "country": "NL",
-      "website": "https://eneve.com",
-      "revenue_eur": 30000000,
-      "employees": 130,
-      "growth_yoy": 0.22,
-      "founded_year": 2010
-    },
-    {
-      "name": "Gridx",
-      "country": "DE",
-      "website": "https://gridx.ai"
-    },
-    {
-      "name": "Kraken Technologies",
-      "country": "GB",
-      "website": "https://kraken.tech",
-      "github_org": "octoenergy"
-    },
-    {
-      "name": "Enpal",
-      "country": "DE",
-      "website": "https://www.enpal.de"
-    },
-    {
-      "name": "1KOMMA5",
-      "country": "DE",
-      "website": "https://1komma5grad.com"
-    },
-    {
-      "name": "Rensource Energy",
-      "country": "GB",
-      "website": "https://rensource.energy"
-    },
-    {
-      "name": "Ostrom",
-      "country": "DE",
-      "website": "https://ostrom.de"
-    },
-    {
-      "name": "Tibber",
-      "country": "NO",
-      "website": "https://tibber.com",
-      "github_org": "tibber"
-    },
-    {
-      "name": "Octopus Energy",
-      "country": "GB",
-      "website": "https://octopus.energy",
-      "github_org": "octoenergy"
-    },
-    {
-      "name": "Voltiq",
-      "country": "DE",
-      "website": "https://voltiq.de"
-    },
-    {
-      "name": "Yuso",
-      "country": "BE",
-      "website": "https://yuso.energy"
-    },
-    {
-      "name": "Enervalis",
-      "country": "BE",
-      "website": "https://enervalis.com"
-    },
-    {
-      "name": "Flexidao",
-      "country": "ES",
-      "website": "https://flexidao.com"
-    },
-    {
-      "name": "Greenely",
-      "country": "SE",
-      "website": "https://greenely.se"
-    },
-    {
-      "name": "Barbara IoT",
-      "country": "ES",
-      "website": "https://barbara.tech"
-    }
+    { "name": "Eneve", "country": "NL", "website": "https://eneve.com", "revenue_eur": 30000000, "employees": 130, "growth_yoy": 0.22, "founded_year": 2010 },
+    { "name": "Gridx", "country": "DE", "website": "https://gridx.ai" },
+    { "name": "Kraken Technologies", "country": "GB", "website": "https://kraken.tech", "github_org": "octoenergy" },
+    { "name": "Enpal", "country": "DE", "website": "https://www.enpal.de" },
+    { "name": "1KOMMA5", "country": "DE", "website": "https://1komma5grad.com" },
+    { "name": "Ostrom", "country": "DE", "website": "https://ostrom.de" },
+    { "name": "Tibber", "country": "NO", "website": "https://tibber.com", "github_org": "tibber" },
+    { "name": "Octopus Energy", "country": "GB", "website": "https://octopus.energy", "github_org": "octoenergy" },
+    { "name": "Voltiq", "country": "DE", "website": "https://voltiq.de" },
+    { "name": "Yuso", "country": "BE", "website": "https://yuso.energy" },
+    { "name": "Enervalis", "country": "BE", "website": "https://enervalis.com" },
+    { "name": "Flexidao", "country": "ES", "website": "https://flexidao.com" },
+    { "name": "Greenely", "country": "SE", "website": "https://greenely.se" },
+    { "name": "Barbara IoT", "country": "ES", "website": "https://barbara.tech" },
+    { "name": "Entrnce", "country": "NL", "website": "https://entrnce.com" },
+    { "name": "Plentify", "country": "GB", "website": "https://plentify.io" },
+    { "name": "Powerdale", "country": "BE", "website": "https://powerdale.com" },
+    { "name": "Kiwi Power", "country": "GB", "website": "https://kiwipowered.com" },
+    { "name": "Limejump", "country": "GB", "website": "https://limejump.com" },
+    { "name": "Piclo", "country": "GB", "website": "https://piclo.energy" },
+    { "name": "Enphase Europe", "country": "FR", "website": "https://enphase.com" },
+    { "name": "Sonnen", "country": "DE", "website": "https://sonnen.de" },
+    { "name": "Greenbyte", "country": "SE", "website": "https://greenbyte.com" },
+    { "name": "Enevo", "country": "FI", "website": "https://enevo.com" },
+    { "name": "Smartvatten", "country": "FI", "website": "https://smartvatten.com" },
+    { "name": "Ngrid / National Grid ESO", "country": "GB", "website": "https://nationalgrideso.com" },
+    { "name": "Bulb Energy", "country": "GB", "website": "https://bulb.co.uk" },
+    { "name": "Lichtblick", "country": "DE", "website": "https://lichtblick.de" },
+    { "name": "Rabot Charge", "country": "DE", "website": "https://rabot.charge" },
+    { "name": "Energi Danmark", "country": "DK", "website": "https://energidanmark.dk" },
+    { "name": "Cenergy", "country": "IE", "website": "https://cenergy.io" },
+    { "name": "Wondr Energy", "country": "NL", "website": "https://wondrenergy.com" },
+    { "name": "Otovo", "country": "NO", "website": "https://otovo.com" },
+    { "name": "Svea Solar", "country": "SE", "website": "https://sveasolar.com" },
+    { "name": "Oda Networks", "country": "GB", "website": "https://odanetworks.com" },
+    { "name": "Centrica Business Solutions", "country": "GB", "website": "https://centrica.com" },
+    { "name": "Engie Impact", "country": "FR", "website": "https://engieimpact.com" },
+    { "name": "Next Kraftwerke", "country": "DE", "website": "https://next-kraftwerke.com" },
+    { "name": "Statkraft Markets", "country": "NO", "website": "https://statkraft.com" },
+    { "name": "Axpo", "country": "CH", "website": "https://axpo.com" },
+    { "name": "Danske Commodities", "country": "DK", "website": "https://danskecommodities.com" },
+    { "name": "Repsol Digital Energy", "country": "ES", "website": "https://repsol.com" },
+    { "name": "Enapter", "country": "DE", "website": "https://enapter.com" },
+    { "name": "Predictix Energy", "country": "IT", "website": "https://predictix.io" },
+    { "name": "E-Chargers", "country": "FR", "website": "https://e-chargers.fr" },
+    { "name": "Smappee", "country": "BE", "website": "https://smappee.com" },
+    { "name": "Voltaware", "country": "GB", "website": "https://voltaware.com" },
+    { "name": "Switchee", "country": "GB", "website": "https://switchee.com" },
+    { "name": "Loop Energy Saver", "country": "GB", "website": "https://loop.homes" },
+    { "name": "Zuper", "country": "DE", "website": "https://zuper.de" }
   ]
 }
