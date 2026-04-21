@@ -12,6 +12,7 @@ import click
 from loguru import logger
 
 from solstein.domain import Company, Universe
+from solstein.export import write_narrative_brief
 from solstein.pipeline import run_pipeline
 
 
@@ -127,6 +128,39 @@ def universe_from_csv(
         encoding="utf-8",
     )
     click.echo(f"Wrote {len(companies)} companies → {json_path}")
+
+
+@cli.command()
+@click.option(
+    "--universe",
+    "universe_path",
+    required=True,
+    type=click.Path(exists=True, path_type=Path),
+    help="Path to a universe JSON file (typically produced by `solstein run`).",
+)
+@click.option(
+    "--output",
+    "output_path",
+    required=True,
+    type=click.Path(path_type=Path),
+    help="Output markdown file path.",
+)
+@click.option(
+    "--sponsor",
+    default=None,
+    help="Optional sponsor company name — appears in the brief header.",
+)
+def narrate(universe_path: Path, output_path: Path, sponsor: str | None) -> None:
+    """Generate an analytical narrative brief from a scored universe.
+
+    The input universe should already be scored (i.e., produced by `solstein run`).
+    Re-scoring a raw universe is not automatic here; use `solstein run` first.
+    """
+    data = json.loads(universe_path.read_text(encoding="utf-8"))
+    universe = Universe.model_validate(data)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    write_narrative_brief(universe, output_path, sponsor_company=sponsor)
+    click.echo(f"Wrote narrative brief → {output_path}")
 
 
 if __name__ == "__main__":

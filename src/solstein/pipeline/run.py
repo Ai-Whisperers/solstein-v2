@@ -6,6 +6,7 @@ Discover → Enrich → Score → Export. No dual-writes, no side branches.
 from __future__ import annotations
 
 import asyncio
+import json
 from pathlib import Path
 
 import httpx
@@ -14,6 +15,7 @@ from loguru import logger
 from solstein.adapters import CompaniesHouseAdapter, GitHubAdapter, SecEdgarAdapter
 from solstein.domain import Company, Universe
 from solstein.enrichment import YFinanceAdapter
+from solstein.export.narrate import write_narrative_brief
 from solstein.export.writers import write_excel, write_markdown_brief
 from solstein.scoring import score_company
 
@@ -52,6 +54,11 @@ async def run_pipeline(universe: Universe, output_dir: Path) -> Universe:
 
     write_excel(universe, output_dir / f"{universe.name}.xlsx")
     write_markdown_brief(universe, output_dir / f"{universe.name}.md")
+    write_narrative_brief(universe, output_dir / f"{universe.name}-narrative.md")
+    (output_dir / f"{universe.name}-scored.json").write_text(
+        json.dumps(universe.model_dump(mode="json"), indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
     scored = sum(1 for c in universe.companies if c.composite_score is not None)
     logger.info(f"Pipeline done: scored={scored}/{len(universe.companies)} → {output_dir}")
