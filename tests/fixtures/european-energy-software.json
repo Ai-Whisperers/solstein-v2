@@ -1,0 +1,88 @@
+{
+  "name": "european-energy-software-2026",
+  "description": "Starter universe: European software companies serving the energy sector. Seed list for deal-team prospecting. Expand as leads come in from Michiel Kuiper and network.",
+  "companies": [
+    {
+      "name": "Eneve",
+      "country": "NL",
+      "website": "https://eneve.com",
+      "revenue_eur": 30000000,
+      "employees": 130,
+      "growth_yoy": 0.22,
+      "founded_year": 2010
+    },
+    {
+      "name": "Gridx",
+      "country": "DE",
+      "website": "https://gridx.ai"
+    },
+    {
+      "name": "Kraken Technologies",
+      "country": "GB",
+      "website": "https://kraken.tech",
+      "github_org": "octoenergy"
+    },
+    {
+      "name": "Enpal",
+      "country": "DE",
+      "website": "https://www.enpal.de"
+    },
+    {
+      "name": "1KOMMA5",
+      "country": "DE",
+      "website": "https://1komma5grad.com"
+    },
+    {
+      "name": "Rensource Energy",
+      "country": "GB",
+      "website": "https://rensource.energy"
+    },
+    {
+      "name": "Ostrom",
+      "country": "DE",
+      "website": "https://ostrom.de"
+    },
+    {
+      "name": "Tibber",
+      "country": "NO",
+      "website": "https://tibber.com",
+      "github_org": "tibber"
+    },
+    {
+      "name": "Octopus Energy",
+      "country": "GB",
+      "website": "https://octopus.energy",
+      "github_org": "octoenergy"
+    },
+    {
+      "name": "Voltiq",
+      "country": "DE",
+      "website": "https://voltiq.de"
+    },
+    {
+      "name": "Yuso",
+      "country": "BE",
+      "website": "https://yuso.energy"
+    },
+    {
+      "name": "Enervalis",
+      "country": "BE",
+      "website": "https://enervalis.com"
+    },
+    {
+      "name": "Flexidao",
+      "country": "ES",
+      "website": "https://flexidao.com"
+    },
+    {
+      "name": "Greenely",
+      "country": "SE",
+      "website": "https://greenely.se"
+    },
+    {
+      "name": "Barbara IoT",
+      "country": "ES",
+      "website": "https://barbara.tech"
+    }
+  ]
+}

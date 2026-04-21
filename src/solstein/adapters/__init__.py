@@ -8,5 +8,6 @@ Contract for any adapter:
 
 from solstein.adapters.companies_house import CompaniesHouseAdapter
 from solstein.adapters.github import GitHubAdapter
+from solstein.adapters.sec_edgar import SecEdgarAdapter
 
-__all__ = ["CompaniesHouseAdapter", "GitHubAdapter"]
+__all__ = ["CompaniesHouseAdapter", "GitHubAdapter", "SecEdgarAdapter"]

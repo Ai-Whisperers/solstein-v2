@@ -20,6 +20,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+yfinance = [
+    "yfinance>=0.2.40",
+]
 dev = [
     "pytest>=8.2",
     "pytest-asyncio>=0.23",
@@ -28,6 +31,7 @@ dev = [
     "ruff>=0.5",
     "mypy>=1.10",
     "types-openpyxl",
+    "yfinance>=0.2.40",
 ]
 
 [project.scripts]

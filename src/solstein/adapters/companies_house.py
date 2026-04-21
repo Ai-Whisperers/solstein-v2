@@ -18,20 +18,11 @@ from typing import Any
 
 import httpx
 from loguru import logger
-from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
+from solstein.adapters._retry import http_retry
 from solstein.domain import Citation, Company
 
 API_BASE = "https://api.company-information.service.gov.uk"
-
-
-def _is_transient(exc: BaseException) -> bool:
-    """Retry timeouts and 5xx. 4xx errors are permanent — don't burn retries on them."""
-    if isinstance(exc, httpx.TimeoutException | httpx.NetworkError):
-        return True
-    if isinstance(exc, httpx.HTTPStatusError):
-        return 500 <= exc.response.status_code < 600
-    return False
 
 
 class CompaniesHouseAdapter:
@@ -50,12 +41,7 @@ class CompaniesHouseAdapter:
     def _auth(self) -> httpx.BasicAuth | None:
         return httpx.BasicAuth(self.api_key, "") if self.api_key else None
 
-    @retry(
-        stop=stop_after_attempt(3),
-        wait=wait_exponential(min=1, max=10),
-        retry=retry_if_exception(_is_transient),
-        reraise=True,
-    )
+    @http_retry
     async def _get(self, path: str, params: dict[str, str] | None = None) -> httpx.Response:
         response = await self.client.get(
             f"{API_BASE}{path}", auth=self._auth, params=params, timeout=15.0

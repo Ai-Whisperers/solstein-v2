@@ -39,6 +39,9 @@ class Company(BaseModel):
     growth_yoy: float | None = None
     founded_year: int | None = None
 
+    ticker: str | None = None  # e.g., "AAPL". Enables yfinance enrichment.
+    sec_cik: str | None = None  # SEC Central Index Key. Set by SEC adapter.
+
     github_org: str | None = None
     github_stars_total: int | None = None
     github_commits_last_90d: int | None = None

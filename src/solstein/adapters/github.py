@@ -12,8 +12,8 @@ from datetime import UTC, date, datetime, timedelta
 
 import httpx
 from loguru import logger
-from tenacity import retry, stop_after_attempt, wait_exponential
 
+from solstein.adapters._retry import http_retry
 from solstein.domain import Citation, Company
 
 GITHUB_API = "https://api.github.com"
@@ -31,7 +31,7 @@ class GitHubAdapter:
             headers["Authorization"] = f"Bearer {self.token}"
         return headers
 
-    @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=1, max=10))
+    @http_retry
     async def _get(self, path: str, params: dict[str, str] | None = None) -> httpx.Response:
         url = f"{GITHUB_API}{path}"
         response = await self.client.get(url, headers=self._headers, params=params, timeout=15.0)
@@ -46,8 +46,15 @@ class GitHubAdapter:
         try:
             repos = await self._list_repos(company.github_org)
         except httpx.HTTPStatusError as e:
-            if e.response.status_code == 404:
+            status = e.response.status_code
+            if status == 404:
                 logger.warning(f"GitHub org '{company.github_org}' not found")
+                return company
+            if status == 403 and "rate limit" in e.response.text.lower():
+                logger.warning(
+                    f"GitHub rate-limited while enriching '{company.github_org}' — "
+                    "set GITHUB_TOKEN for 5000 req/hour"
+                )
                 return company
             logger.error(f"GitHub error for {company.github_org}: {e}")
             raise
@@ -88,8 +95,12 @@ class GitHubAdapter:
                 params={"since": since_iso, "per_page": "100"},
             )
         except httpx.HTTPStatusError as e:
-            # 409 = empty repo; 404 = gone. Treat as zero.
-            if e.response.status_code in (404, 409):
+            status = e.response.status_code
+            # 409 = empty repo; 404 = gone; 403 rate limit = treat as zero and move on.
+            if status in (404, 409):
+                return 0
+            if status == 403 and "rate limit" in e.response.text.lower():
+                logger.warning(f"GitHub rate-limited on {org}/{repo}")
                 return 0
             raise
         return len(response.json())

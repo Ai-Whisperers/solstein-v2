@@ -1,5 +1,5 @@
-"""Third-party enrichment — Crunchbase, LinkedIn, Yahoo Finance.
+"""Third-party enrichment — market-data sources that augment adapter output."""
 
-Not yet implemented. When we need real enrichment, add one module per source,
-follow the adapter contract (see solstein.adapters), and wire into pipeline.run.
-"""
+from solstein.enrichment.yfinance_adapter import YFinanceAdapter
+
+__all__ = ["YFinanceAdapter"]
