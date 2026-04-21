@@ -1,0 +1,18 @@
+{
+  "name": "eneve-reference",
+  "description": "Regression fixture: Eneve scored against a known baseline. Must stay stable.",
+  "companies": [
+    {
+      "name": "Eneve",
+      "country": "NL",
+      "website": "https://eneve.com",
+      "revenue_eur": 30000000,
+      "employees": 130,
+      "growth_yoy": 0.22,
+      "founded_year": 2010,
+      "github_org": null,
+      "github_stars_total": null,
+      "github_commits_last_90d": null
+    }
+  ]
+}
