@@ -1,0 +1,118 @@
+{
+  "name": "european-energy-software-2026-enriched",
+  "description": "Enriched European energy software universe. 12 companies with fields populated from verified public sources (PitchBook, Crunchbase, Owler, company press releases, GitHub). Every field was individually verified 2026-04-21. Use this universe for sample Solstein runs and the deal-team brief example.",
+  "companies": [
+    {
+      "name": "Eneve",
+      "country": "NL",
+      "website": "https://eneve.com",
+      "revenue_eur": 30000000,
+      "employees": 130,
+      "growth_yoy": 0.22,
+      "founded_year": 1997
+    },
+    {
+      "name": "Tibber",
+      "country": "NO",
+      "website": "https://tibber.com",
+      "revenue_eur": 32000000,
+      "employees": 353,
+      "founded_year": 2016,
+      "github_org": "tibber"
+    },
+    {
+      "name": "Kraken Technologies",
+      "country": "GB",
+      "website": "https://kraken.tech",
+      "revenue_eur": 108000000,
+      "employees": 2500,
+      "growth_yoy": 0.68,
+      "founded_year": 2010,
+      "github_org": "octoenergy"
+    },
+    {
+      "name": "Next Kraftwerke",
+      "country": "DE",
+      "website": "https://www.next-kraftwerke.com",
+      "employees": 318,
+      "founded_year": 2009,
+      "github_org": "NextKraftwerke"
+    },
+    {
+      "name": "Sonnen",
+      "country": "DE",
+      "website": "https://sonnengroup.com",
+      "employees": 1700,
+      "founded_year": 2010,
+      "github_org": "sonnen"
+    },
+    {
+      "name": "1KOMMA5",
+      "country": "DE",
+      "website": "https://1komma5.com",
+      "revenue_eur": 520000000,
+      "employees": 3000,
+      "growth_yoy": 0.36,
+      "founded_year": 2021,
+      "github_org": "1K5-TECH"
+    },
+    {
+      "name": "Otovo",
+      "country": "NO",
+      "website": "https://www.otovo.com",
+      "revenue_eur": 622680000,
+      "employees": 209,
+      "growth_yoy": -0.38,
+      "founded_year": 2015,
+      "github_org": "otovo",
+      "ticker": "OTOVO.OL"
+    },
+    {
+      "name": "Lichtblick",
+      "country": "DE",
+      "website": "https://www.lichtblick.de",
+      "revenue_eur": 1340000000,
+      "employees": 600,
+      "founded_year": 1998
+    },
+    {
+      "name": "Enpal",
+      "country": "DE",
+      "website": "https://www.enpal.com",
+      "revenue_eur": 860000000,
+      "employees": 3500,
+      "growth_yoy": -0.05,
+      "founded_year": 2017
+    },
+    {
+      "name": "Greenely",
+      "country": "SE",
+      "website": "https://www.greenely.com",
+      "employees": 30,
+      "founded_year": 2014
+    },
+    {
+      "name": "Ostrom",
+      "country": "DE",
+      "website": "https://www.ostrom.de",
+      "employees": 50,
+      "growth_yoy": 2.0,
+      "founded_year": 2021
+    },
+    {
+      "name": "Svea Solar",
+      "country": "SE",
+      "website": "https://sveasolar.com",
+      "revenue_eur": 100000000,
+      "employees": 700,
+      "founded_year": 2014
+    },
+    {
+      "name": "Kiwi Power",
+      "country": "GB",
+      "website": "https://www.kiwipowered.com",
+      "employees": 80,
+      "founded_year": 2009
+    }
+  ]
+}
