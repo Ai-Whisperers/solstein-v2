@@ -68,10 +68,19 @@ def composite(company: Company) -> float | None:
 
 
 def score_company(company: Company) -> Company:
-    """Attach all scores to a company. Idempotent. Never raises."""
+    """Attach all scores to a company. Idempotent. Never raises.
+
+    Adapter-derived values for `ai_maturity_score` (e.g., from the website
+    adapter's text analysis) are preserved if the GitHub-based signal is
+    absent. When both are available, the GitHub-based signal wins because
+    it reflects actual engineering activity rather than marketing language.
+    """
     company.growth_score = growth_score(company)
     company.financial_health_score = financial_health_score(company)
-    company.ai_maturity_score = ai_maturity_score(company)
+    github_derived = ai_maturity_score(company)
+    if github_derived is not None:
+        company.ai_maturity_score = github_derived
+    # else: leave whatever an adapter (e.g., website) populated, including None
     company.composite_score = composite(company)
     if company.composite_score is not None:
         company.tier = classify(company.composite_score)

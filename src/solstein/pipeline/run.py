@@ -12,7 +12,12 @@ from pathlib import Path
 import httpx
 from loguru import logger
 
-from solstein.adapters import CompaniesHouseAdapter, GitHubAdapter, SecEdgarAdapter
+from solstein.adapters import (
+    CompaniesHouseAdapter,
+    GitHubAdapter,
+    SecEdgarAdapter,
+    WebsiteAdapter,
+)
 from solstein.domain import Company, Universe
 from solstein.enrichment import YFinanceAdapter
 from solstein.export.narrate import write_narrative_brief
@@ -33,12 +38,14 @@ async def run_pipeline(universe: Universe, output_dir: Path) -> Universe:
         github = GitHubAdapter(client)
         companies_house = CompaniesHouseAdapter(client)
         sec = SecEdgarAdapter(client)
+        website = WebsiteAdapter(client)
         yfinance = YFinanceAdapter()
 
         async def enrich_one(c: Company) -> Company:
             c = await github.enrich(c)
             c = await companies_house.enrich(c)
             c = await sec.enrich(c)
+            c = await website.enrich(c)
             c = await yfinance.enrich(c)
             return c
 
