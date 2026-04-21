@@ -129,19 +129,4 @@ This SOW is governed by `{JURISDICTION}` law. Any dispute is subject to the excl
 
 ---
 
-## Appendix A — fee math (internal only, not shared with Client)
-
-Target: profitable at €25K flat.
-
-| Line item | Cost |
-|---|---|
-| Lead engineer: 10 working days | €6,500 |
-| Partner: 4 working days (oversight + presentation) | €4,800 |
-| Total direct labor | €11,300 |
-| Tooling / API costs | €300 |
-| Overhead allocation (25%) | €2,900 |
-| **Total cost** | **€14,500** |
-| **Fee** | **€25,000** |
-| **Gross margin** | **€10,500 (42%)** |
-
-Adjust rates and partner allocation for local market conditions. If local effective billing rates would push cost above ~€18K, raise the fee to €30-35K rather than cutting scope.
+_Fee math, pricing economics, and internal cost analyses are held in a separate internal document (`docs/commercial/internal/pricing-economics.md`). Do not include that document in any artifact sent to a counterparty._

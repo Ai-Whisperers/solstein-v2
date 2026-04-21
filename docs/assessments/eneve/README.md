@@ -6,7 +6,9 @@ This directory is the internal package for a possible AI-Whisperers engagement w
 
 ## Context
 
-Michiel Kuiper (Vortex-connected PE investor) introduced AI-Whisperers to Eneve as a transformation candidate. Nothing has been delivered; all prior "proof" work was on synthetic data. This package represents the internal artifacts we would use *if and when* the commercial motion activates.
+Eneve is a Dutch energy software company owned by Vortex Capital Partners (buyout Oct 2022). AI-Whisperers received an introduction to Eneve — or to Vortex leadership — through a person referred to internally as "Michiel." **The intro's identity and precise role are unverified.** Candidates include Michiel Klaps (Vortex Investment Manager, verifiable from Vortex's public team page) but could be a separate person. This must be resolved before the name appears in any external artifact.
+
+Nothing has been delivered to Eneve or Vortex. All prior "proof" work on Eneve (the v1 pipeline outputs showing Eneve as Phoenix tier 9.03/10) was produced on partly-synthetic data and is not evidence. This package represents the internal artifacts we would use *if and when* the commercial motion activates.
 
 ## Contents
 

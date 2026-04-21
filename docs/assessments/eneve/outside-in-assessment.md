@@ -13,9 +13,9 @@ Eneve is a Vortex-backed European energy-software rollup: Energy21 (acquired Oct
 
 On every public dimension we were able to measure, Eneve displays **zero external AI signal**. No GitHub presence, no engineering blog, no AI/ML terminology in product marketing, no open technical roles (currently 5 open positions, all commercial), no references to modern data or ML infrastructure in announcements or case studies. The language on their site is "smart software" in the 2015 sense, not the 2026 sense.
 
-This is not a criticism. It is a **signal**. Companies that have completed serious AI-native transformation talk about it publicly — in careers posts, in tech blogs, in product copy, in conference talks. Eneve does none of this. Combined with the five-codebase integration challenge implied by their M&A history, Eneve fits the profile of a company at the **beginning** of an AI-native transformation, not the middle. The strategic opening is real.
+This is a **signal worth noting, not a diagnosis**. Some companies that have serious AI-native capability don't discuss it publicly — energy-sector B2B software in particular routinely avoids public GitHub orgs (security, competitive concerns) and avoids "AI" in marketing language to regulated utility buyers. We are inferring, not observing. The honest framing: *based on external signals only, Eneve pattern-matches to companies we would expect to be early in their AI-native transformation journey.* A sophisticated reader should discount this inference until primary evidence is available.
 
-An on-site Phase 1 diagnostic would likely reveal (with substantial confidence): multiple overlapping codebases from the five predecessor companies, no unified platform yet, manual processes across teams, traditional engineering practices, no ML/AI tooling in production workflows, and a leadership team aware of the gap but without a structured approach to closing it. Exactly the conditions where a 2-week diagnostic → 6-week pilot → broader transformation sequence delivers measurable ROI.
+Combined with the five-codebase integration challenge implied by their M&A history, Eneve is plausibly a company near the beginning of an AI-native transformation. An on-site Phase 1 diagnostic would be required to replace inference with evidence. We do not claim substantial confidence — we claim pattern-matching worth investigating.
 
 **Recommendation:** Proceed to Phase 1 diagnostic proposal. Engage primarily through Vortex Capital Partners; frame the offering in terms of their stated investment thesis ("accelerating software and digital technology companies").
 
@@ -57,6 +57,8 @@ Seven named products, all under the EBASE family or standalone:
 - BRP as a Service
 
 Each is presumably the offering of (or descended from) one of the predecessor companies. The product marketing does not disclose which underlying codebase serves which offering.
+
+**Caveat on all external-signal interpretations below**: public signals are a weak instrument for assessing enterprise software companies. Many of the signals we flag (no public GitHub, no AI marketing language, no public engineering blog) are consistent with both *"early in AI transformation"* and *"sophisticated but quiet."* An internal diagnostic is the only reliable way to distinguish.
 
 ### 1.4 Named customers (public references)
 
@@ -121,7 +123,7 @@ Of the 6 most recent news items: 1 acquisition (Iberian expansion), 1 sponsorshi
 
 Given four predecessor companies each with their own product line (EBASE from Energy21, customer onboarding from Gridhub, billing from Ecedo, trading from Jules) and only 10 months since formal merger (June 2025 → April 2026), a unified single-codebase platform is almost certainly not yet in place. Most rollups of this scale take 2-4 years to truly integrate at the code level; many never fully do. The product portfolio page lists these offerings as if they're one family, but the site careful uses terms like *"by integrating their technologies, teams and domain knowledge"* — signaling integration as an ongoing initiative.
 
-Probabilities, based on 15+ similar rollups we and our peers have observed:
+Probabilities below are illustrative, based on patterns documented in public writeups of buy-and-build software rollups (not on 15 engagements we have personally delivered — we have delivered none). Read these as structured guesses to be falsified by diagnostic evidence:
 
 | State | Probability |
 |---|---|
@@ -136,7 +138,7 @@ The middle two scenarios are where transformation work has most leverage.
 
 ## Section 3 — What an internal diagnostic would almost certainly reveal
 
-This section is speculative (clearly labeled). But the speculation is informed by strong external pattern-matching from comparable Vortex/mid-market PE-backed rollups.
+This section is speculative. It is pattern-matching from public writeups of comparable rollups — not from engagements we have personally delivered (we have delivered none).
 
 ### 3.1 Platform unification is incomplete
 

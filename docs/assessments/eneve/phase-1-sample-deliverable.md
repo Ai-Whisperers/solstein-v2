@@ -1,8 +1,10 @@
 # Example Phase 1 diagnostic deliverable — sanitized
 
-> **This is a template / sample, not a real client deliverable.** It shows the shape, depth, and tone of what Eneve's leadership would receive at the end of a Phase 1 engagement. The scenario is a synthesized composite of Vortex-backed rollups at Eneve's stage; no specific client is depicted.
+> **This is a template / sample, not a real client deliverable.** It shows the shape, depth, and tone of what Eneve's leadership would receive at the end of a Phase 1 engagement. The scenario uses placeholder bracketed values — *no actual client metrics are populated*.
 >
-> A real Phase 1 deliverable for Eneve would replace every finding and metric in this document with verified, auditable numbers from 10 days of on-site work. The structure and depth of the document itself would match this template.
+> The text describing patterns ("typical of mid-consolidation rollups," "industry-reported targets") synthesizes from public writeups of comparable buy-and-build software situations. **AI-Whisperers has not personally delivered this engagement; the structure is what we would produce, not a record of what we have produced.**
+>
+> A real Phase 1 deliverable would replace every bracketed value with verified, auditable numbers from 10 days of on-site work, and would replace the generic narrative with client-specific findings.
 
 ---
 
@@ -29,7 +31,7 @@ Three findings are load-bearing for the recommendations below:
 
 On all three fronts, [Client] is not in an unusual or concerning position — it is in the *typical* position of a PE-backed rollup at month [X]. The opportunity is not to fix something broken; it is to accelerate through the next 12 months of evolution that would otherwise take 24-36.
 
-We recommend [Client] proceed with three pilots, prioritized by impact-per-dollar, described in §4. If executed in sequence over 6 months, we project:
+We recommend [Client] proceed with three pilots, prioritized by impact-per-dollar, described in §4. If executed in sequence over 6 months, targets based on industry-reported comparable work:
 
 | Metric | Baseline | 6-month target |
 |---|---|---|
@@ -41,7 +43,9 @@ We recommend [Client] proceed with three pilots, prioritized by impact-per-dolla
 | Files > 500 LOC | [X] | [Y] (−50% minimum) |
 | AI-tool adoption (engineers using Claude Code / Cursor daily) | ~[X]% | >80% |
 
-These targets are set to what we have seen delivered at comparable companies — not optimistic forecasts. The pilots are designed to make each metric measurable in isolation.
+> **Note on the targets:** these are *target* values drawn from industry-reported comparable engagements (public case studies, published benchmarks from SaaS tooling vendors). They are not promises, and they are not directly measured from engagements we have personally delivered. In a Phase 1 presentation to a real sponsor, we are explicit about this distinction. We commit to measuring and executing honestly; we do not commit to achieving specific numeric outcomes.
+
+The pilots are designed to make each metric measurable in isolation, so outcome-vs-target is knowable per pilot rather than bundled.
 
 ---
 

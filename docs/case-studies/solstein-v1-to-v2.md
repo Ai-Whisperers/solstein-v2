@@ -1,9 +1,12 @@
-# Case study — Solstein v1 → v2
+# Internal methodology validation — Solstein v1 → v2
 
-**Client:** AI-Whisperers (internal)
+> **What this is, and what it isn't.** This document records an internal transformation — AI-Whisperers applying our methodology to our own prospecting tool. It is **not** a client engagement. It is not evidence we have modernized an enterprise codebase with external customers, production traffic, or regulatory exposure. It is evidence that we can execute the methodology on a codebase we know. In a Phase 1 diagnostic conversation, it provides a concrete example of what "AI-native rebuild" looks like in small; it does not substitute for external references, which we do not yet have.
+
+**Subject:** Solstein (internal AI-Whisperers prospecting tool)
 **Engagement type:** AI-native rebuild. Single focused session, Claude Code + Opus 4.7.
 **Date:** 2026-04-21
-**Engagement duration:** ~4 hours of focused work (one session).
+**Duration:** ~4 hours of focused work (one session).
+**Scope:** a single-repo rebuild of a team-internal tool, with no production traffic, no external users, and no data-integrity dependencies that could harm a third party if broken.
 
 ---
 
@@ -13,7 +16,7 @@ An internal AI-prospecting platform accumulated 18 months of unfocused developme
 
 A single AI-augmented rebuild session delivered a replacement: **18 files, 887 LOC, one canonical pipeline, one threshold registry, four real data adapters, strict mypy, zero ruff errors, 36 passing tests, working end-to-end on real data.** The rebuild is the v2 in this repository. The before state is preserved at `github.com/Ai-Whisperers/solstein-v1-archive`.
 
-This document captures the delta and the methodology.
+This document captures the delta and the methodology. It is a *demonstration*, not a reference. Readers evaluating our firm for enterprise engagements should weight this accordingly.
 
 ---
 

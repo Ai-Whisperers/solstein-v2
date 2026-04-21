@@ -106,11 +106,13 @@ Design-phase choices, subject to change based on client environment:
 
 Measure the whole time. At the end of week 6, present the team's cycle time, revert rate, and bot-intervention rate to the exec sponsor. Decide: expand, iterate, or roll back.
 
-## Expected metrics deltas (from public benchmarks + internal pilots)
+## Expected metrics deltas — reference ranges from public writeups
 
-Not promises. Honest ranges:
+> **Important:** we have not executed this pattern in a client engagement. The table below is a synthesis of publicly-reported outcomes from companies that have published data (GitHub, Linear, various case studies in SaaS blogs). These numbers should be read as *what the literature says is achievable*, not as *what AI-Whisperers has delivered*.
+>
+> When we pitch a client: we do not promise these numbers. We promise to measure and execute honestly.
 
-| Metric | Typical baseline | Typical after 6 weeks | Typical after 6 months |
+| Metric | Typical baseline (industry reports) | Typical after 6 weeks (industry reports) | Typical after 6 months (industry reports) |
 |---|---|---|---|
 | Median ticket cycle time | 7-14 days | 4-8 days | 1-3 days |
 | Revert rate | 1-3% | 1-3% (should not rise) | 1-3% |
@@ -119,7 +121,7 @@ Not promises. Honest ranges:
 | Bot PR authoring volume | 0% | 5-10% of PRs | 15-25% of PRs |
 | Human override rate on bot suggestions | — | 40-60% (initial) | 15-35% (calibrated) |
 
-Caveats: these ranges are observed from our own smaller-scale work plus public case studies. Client-specific ranges may vary widely depending on codebase maturity, team size, and prior automation.
+Caveats: these ranges are *informational*, drawn from publicly-reported case studies, not from our own delivered engagements. Client-specific outcomes vary widely depending on codebase maturity, team size, prior automation, and industry constraints. After our first pilot execution, this table will be rewritten with measured evidence.
 
 ## What the sponsor sees weekly
 

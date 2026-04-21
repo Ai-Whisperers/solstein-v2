@@ -177,20 +177,6 @@ Updated by `{PE_FIRM}` at PPA signature:
 - Engagement commissioning authority: _____
 - Finance contact for invoicing: _____
 
-## Appendix C — Economics summary (internal, not shared with PE firm)
+---
 
-Expected annual economics per PPA at steady state:
-
-| Revenue stream | Low | Expected | High |
-|---|---|---|---|
-| Retainer (€10K × 12) | €120K | €120K | €120K |
-| Phase 1 engagements (3-5/yr × €25K) | €75K | €100K | €125K |
-| Phase 2 pilots (1-3/yr × €50K) | €50K | €100K | €150K |
-| Phase 3 (0-1/yr, equity-inclusive) | €0 | €50K | €200K |
-| **Total annual** | **€245K** | **€370K** | **€595K** |
-
-Cost to serve: roughly 50-60% direct labor cost, so gross margin ~40-50%. A PPA covering one mid-market PE firm is a 1-1.5 FTE loading in steady state.
-
-Break-even: the PPA pays for itself at ~3 Phase 1 engagements per year plus retainer. Anything above that is margin.
-
-Risk: a PE firm exits its 2-3 largest portcos simultaneously → engagement pipeline drops sharply. Mitigate by not concentrating dependency on any single PPA; target 3-5 parallel PPAs at steady state.
+_Internal economics (expected annual revenue, cost to serve, margin, capacity forecasts) are held in `docs/commercial/internal/pricing-economics.md`. Do not include that document in any PE-firm-facing artifact._

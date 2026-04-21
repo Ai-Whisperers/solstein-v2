@@ -146,7 +146,7 @@ Gate: everything below depends on user decision to re-engage externally. We've b
 | Deal team | Jeroen de Vreede, Michiel Klaps (Investment Managers) | Day-to-day owners of specific portcos |
 | Technical analyst | Dragos Prodan | The one who actually reads our code and methodology; if he finds it sharp, word travels |
 
-**Note on "Michiel":** Vortex has a Michiel Klaps (Investment Manager). The "Michiel" referenced as the warm-intro contact to Eneve may be him. Confirm with internal records before outreach.
+**Note on "Michiel":** The "Michiel" referenced internally as the warm-intro contact has not been verified against a specific person. Vortex's public team page lists a Michiel Klaps (Investment Manager). It is possible — not confirmed — that the intro is Michiel Klaps. It is also possible the intro is a different Michiel entirely (separately connected to Eneve, perhaps as a board member, advisor, or independent operator). **Do not use the name "Michiel Kuiper" or "Michiel Klaps" in any external artifact until the identity is verified with the human owner of the relationship.** If the identity cannot be verified, refer to the intro as "a warm contact" without a name.
 
 ## Sources
 
